@@ -1,0 +1,253 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-family: 'Poppins', sans-serif; /* Import Google font - Poppins */
+}
+
+/* Body styles */
+body {
+    display: flex; /* Enables flexbox on the body */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    min-height: 100vh; /* Full viewport height */
+    background-image: url('img/sky.png'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the whole background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+
+}
+
+/* Wrapper styles */
+.wrapper {
+    display: flex; /* Enables flexbox for the wrapper */
+    flex-direction: column; /* Stack header and piano keys vertically */
+    align-items: center; /* Centers items vertically within the wrapper */
+    justify-content: center; /* Centers items horizontally within the wrapper */
+    max-width: 1000px; /* Sets a maximum width */
+    margin: 0 auto; /* Centers the wrapper horizontally in the viewport */
+    padding: 20px; /* Optional: add padding for breathing space */
+    position: relative; /* Allows absolute positioning of children */
+}
+
+/* Image styles */
+.img-piano {
+    max-width: 100%; /* Prevents the image from exceeding the wrapper's width */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Ensures the image behaves as a block element */
+    z-index: 1; /* Set z-index to position it below the new piano image */
+    position: relative; /* Ensure z-index works properly */
+    top: -20px; /* Adjust this value to move it down */
+}
+
+.img-piano-new {
+    max-width: 96%; /* Prevents the image from exceeding the wrapper's width */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Ensures the image behaves as a block element */
+    z-index: 3; /* Set z-index to position it above the base piano image */
+    position: absolute; /* Absolute positioning for overlap */
+    top: 0; /* Position it at the top of the wrapper */
+    left: -1; /* Align it to the left of the wrapper */
+}
+
+/* Piano keys styles */
+.piano-keys {
+    display: flex; /* Makes the keys lay out in a row */
+    justify-content: center; /* Centers the keys horizontally */
+    margin-top: 360px; /* Move keys closer to the img-piano-new */
+    position: absolute; /* Keep it above the images */
+    top: 0; /* Adjust this value to position it directly above the images */
+    left: 50%; /* Centers the keys horizontally within the wrapper */
+    transform: translateX(-50%); /* Adjusts the horizontal center of the keys */
+    z-index: 2; /* Set z-index to position above img-piano */
+}
+
+/* Piano key styles */
+.piano-keys .key {
+    margin: 1.5px; /* Space between keys */
+    list-style: none; /* Remove bullets from list items */
+    color: #fff; /* Sets the color for the keys */
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px px 0 #000; /* Adds black outline */
+    text-transform: uppercase;
+    position: relative; /* Allows for absolute positioning of the text */
+}
+
+.piano-keys .key.pressed {
+    box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust for a pressed look */
+    transform: translateY(2px); /* Adds a slight downward movement */
+}
+
+/* Adjust the dimensions of the red keys */
+.piano-keys .red {
+    width: 115px; /* Use viewport width for relative sizing */
+    height: 272px; /* Use viewport height for relative sizing */
+    min-width: 60px; /* Set minimum width to ensure visibility */
+    min-height: 100px; /* Set minimum height to ensure visibility */
+    border-radius: 20px; /* Rounded corners for the key */
+    background: linear-gradient(#aa0000 96%, #990000 4%);
+    position: relative; /* Necessary for stacking and positioning */
+    z-index: 2; /* Higher z-index for the red key itself */
+}
+
+/* Create a pseudo-element for the shadow effect */
+.piano-keys .red::active {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute; /* Position it relative to the red key */
+    bottom: 0; /* Align it to the bottom of the key */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width of the key */
+    height: 20px; /* Height of the darker red rectangle */
+    background: linear-gradient(to bottom, #aa0000 0%, #990000 100%);
+    border-radius: 0 20px 20px; /* Round the bottom corners to match the key */
+    z-index: 1; /* Lower z-index to place it underneath the red key */
+}
+
+.piano-keys .orange {
+    width: 115px; /* Use viewport width for relative sizing */
+    height: 272px; /* Use viewport height for relative sizing */
+    min-width: 60px; /* Set minimum width to ensure visibility */
+    min-height: 100px; /* Set minimum height to ensure visibility */
+    border-radius: 20px; /* Rounded corners for the key */
+    background: linear-gradient(#fe6300 96%, #ed5603 4%);
+    position: relative; /* Necessary for stacking and positioning */
+    z-index: 2; /* Higher z-index for the red key itself */
+}
+
+.piano-keys .orange:active {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute; /* Position it relative to the red key */
+    bottom: 0; /* Align it to the bottom of the key */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width of the key */
+    height: 20px; /* Height of the darker red rectangle */
+    background: linear-gradient(to bottom, #fe6300 0%, #ed5603 100%);
+    border-radius: 0 20px 20px; /* Round the bottom corners to match the key */
+    z-index: 1; /* Lower z-index to place it underneath the red key */
+    background: linear-gradient(to bottom, #fe6300 0%, #ed5603 100%);
+}
+
+.piano-keys .yellow {
+    width: 115px; /* Use viewport width for relative sizing */
+    height: 272px; /* Use viewport height for relative sizing */
+    min-width: 60px; /* Set minimum width to ensure visibility */
+    min-height: 100px; /* Set minimum height to ensure visibility */
+    border-radius: 20px; /* Rounded corners for the key */
+    background: linear-gradient(#ffec00 96%, #e0cb05 4%);
+    position: relative; /* Necessary for stacking and positioning */
+    z-index: 2; /* Higher z-index for the red key itself */
+}
+
+.piano-keys .yellow:active {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute; /* Position it relative to the red key */
+    bottom: 0; /* Align it to the bottom of the key */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width of the key */
+    height: 20px; /* Height of the darker red rectangle */
+    background: linear-gradient(to bottom, #fe6300 0%, #ed5603 100%);
+    border-radius: 0 20px 20px; /* Round the bottom corners to match the key */
+    z-index: 1; /* Lower z-index to place it underneath the red key */
+}
+
+.piano-keys .green {
+    width: 115px; /* Use viewport width for relative sizing */
+    height: 272px; /* Use viewport height for relative sizing */
+    min-width: 60px; /* Set minimum width to ensure visibility */
+    min-height: 100px; /* Set minimum height to ensure visibility */
+    border-radius: 20px; /* Rounded corners for the key */
+    background: linear-gradient(#25fe00 96%, #2be005 4%);
+    position: relative; /* Necessary for stacking and positioning */
+    z-index: 2; /* Higher z-index for the red key itself */
+}
+
+.piano-keys .green:active {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute; /* Position it relative to the red key */
+    bottom: 0; /* Align it to the bottom of the key */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width of the key */
+    height: 20px; /* Height of the darker red rectangle */
+    background: linear-gradient(to bottom, #25fe00 0%, #2be005 100%);
+    border-radius: 0 20px 20px; /* Round the bottom corners to match the key */
+    z-index: 1; /* Lower z-index to place it underneath the red key */
+}
+
+.piano-keys .blue {
+    width: 115px; /* Use viewport width for relative sizing */
+    height: 272px; /* Use viewport height for relative sizing */
+    min-width: 60px; /* Set minimum width to ensure visibility */
+    min-height: 100px; /* Set minimum height to ensure visibility */
+    border-radius: 20px; /* Rounded corners for the key */
+    background: linear-gradient(#057EC9 96%, #0872C1 4%);
+    position: relative; /* Necessary for stacking and positioning */
+    z-index: 2; /* Higher z-index for the red key itself */
+}
+
+.piano-keys .blue:active {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute; /* Position it relative to the red key */
+    bottom: 0; /* Align it to the bottom of the key */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width of the key */
+    height: 20px; /* Height of the darker red rectangle */
+    background: linear-gradient(to bottom, #057EC9 0%, #0872C1 100%);
+    border-radius: 0 20px 20px; /* Round the bottom corners to match the key */
+    z-index: 1; /* Lower z-index to place it underneath the red key */
+}
+
+.piano-keys .purple {
+    width: 115px; /* Use viewport width for relative sizing */
+    height: 272px; /* Use viewport height for relative sizing */
+    min-width: 60px; /* Set minimum width to ensure visibility */
+    min-height: 100px; /* Set minimum height to ensure visibility */
+    border-radius: 20px; /* Rounded corners for the key */
+    background: linear-gradient(#4e0384 96%, #380466 4%);
+    position: relative; /* Necessary for stacking and positioning */
+    z-index: 2; /* Higher z-index for the red key itself */
+}
+
+.piano-keys .purple:active {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute; /* Position it relative to the red key */
+    bottom: 0; /* Align it to the bottom of the key */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width of the key */
+    height: 20px; /* Height of the darker red rectangle */
+    background: linear-gradient(to bottom, #4e0384 0%, #380466 100%);
+    border-radius: 0 20px 20px; /* Round the bottom corners to match the key */
+    z-index: 1; /* Lower z-index to place it underneath the red key */
+}
+
+/* Styles for the letters */
+.piano-keys .key span {
+    font-weight: 700; /* Sets the thickness of the letters */
+    /* Other existing properties */
+    text-shadow: 
+        -2px -2px 0 black,  
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        2px 2px 0 black; /* Creates the stroke effect */
+    position: absolute; /* Position letters independently of the key */
+    bottom: 40px; /* Adjust this value to move letters down */
+    left: 50%; /* Centers letters horizontally within the key */
+    transform: translateX(-50%); /* Centers the letters */
+    font-size: 1.4em; /* Adjusts the font size for better visibility */
+    z-index: 3; /* Ensure letters are above the key background */
+}
+
+.circle {
+    width: 180.5px;
+    height: 180.5px;
+    background-color: #fff; /* You can change the color */
+    opacity: .8; /* Set opacity to 50% */
+    border-radius: 50%; /* This makes it a circle */
+    position: absolute;
+    top: 167px; /* Adjust this to position it on top of the piano image */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Ensure it's perfectly centered */
+    z-index: 10; /* Make sure it sits above the piano images */
+} 
+
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
