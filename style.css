@@ -85,7 +85,7 @@ body {
     min-width: 60px; /* Set minimum width to ensure visibility */
     min-height: 100px; /* Set minimum height to ensure visibility */
     border-radius: 20px; /* Rounded corners for the key */
-    background: linear-gradient(#aa0000 96%, #990000 4%);
+    background: linear-gradient(#c42222 96%, #911515 4%);
     position: relative; /* Necessary for stacking and positioning */
     z-index: 2; /* Higher z-index for the red key itself */
 }
@@ -98,7 +98,7 @@ body {
     left: 0; /* Align to the left */
     width: 100%; /* Full width of the key */
     height: 20px; /* Height of the darker red rectangle */
-    background: linear-gradient(to bottom, #aa0000 0%, #990000 100%);
+    background: linear-gradient(to bottom, #c42222 0%, #911515 100%);
     border-radius: 0 20px 20px; /* Round the bottom corners to match the key */
     z-index: 1; /* Lower z-index to place it underneath the red key */
 }
@@ -109,7 +109,7 @@ body {
     min-width: 60px; /* Set minimum width to ensure visibility */
     min-height: 100px; /* Set minimum height to ensure visibility */
     border-radius: 20px; /* Rounded corners for the key */
-    background: linear-gradient(#fe6300 96%, #ed5603 4%);
+    background: linear-gradient(#fe6300 96%, #b44915 4%);
     position: relative; /* Necessary for stacking and positioning */
     z-index: 2; /* Higher z-index for the red key itself */
 }
@@ -121,10 +121,10 @@ body {
     left: 0; /* Align to the left */
     width: 100%; /* Full width of the key */
     height: 20px; /* Height of the darker red rectangle */
-    background: linear-gradient(to bottom, #fe6300 0%, #ed5603 100%);
+    background: linear-gradient(to bottom, #fe6300 0%, #b44915 100%);
     border-radius: 0 20px 20px; /* Round the bottom corners to match the key */
     z-index: 1; /* Lower z-index to place it underneath the red key */
-    background: linear-gradient(to bottom, #fe6300 0%, #ed5603 100%);
+    background: linear-gradient(to bottom, #fe6300 0%, #b44915 100%);
 }
 
 .piano-keys .yellow {
@@ -133,7 +133,7 @@ body {
     min-width: 60px; /* Set minimum width to ensure visibility */
     min-height: 100px; /* Set minimum height to ensure visibility */
     border-radius: 20px; /* Rounded corners for the key */
-    background: linear-gradient(#ffec00 96%, #e0cb05 4%);
+    background: linear-gradient(#ffec00 96%, #baaf0f 4%);
     position: relative; /* Necessary for stacking and positioning */
     z-index: 2; /* Higher z-index for the red key itself */
 }
@@ -145,7 +145,7 @@ body {
     left: 0; /* Align to the left */
     width: 100%; /* Full width of the key */
     height: 20px; /* Height of the darker red rectangle */
-    background: linear-gradient(to bottom, #fe6300 0%, #ed5603 100%);
+    background: linear-gradient(to bottom, #fe6300 0%, #baaf0f 100%);
     border-radius: 0 20px 20px; /* Round the bottom corners to match the key */
     z-index: 1; /* Lower z-index to place it underneath the red key */
 }
@@ -156,7 +156,7 @@ body {
     min-width: 60px; /* Set minimum width to ensure visibility */
     min-height: 100px; /* Set minimum height to ensure visibility */
     border-radius: 20px; /* Rounded corners for the key */
-    background: linear-gradient(#25fe00 96%, #2be005 4%);
+    background: linear-gradient(#25fe00 96%, #4f9032 4%);
     position: relative; /* Necessary for stacking and positioning */
     z-index: 2; /* Higher z-index for the red key itself */
 }
@@ -168,7 +168,7 @@ body {
     left: 0; /* Align to the left */
     width: 100%; /* Full width of the key */
     height: 20px; /* Height of the darker red rectangle */
-    background: linear-gradient(to bottom, #25fe00 0%, #2be005 100%);
+    background: linear-gradient(to bottom, #25fe00 0%, #4f9032 100%);
     border-radius: 0 20px 20px; /* Round the bottom corners to match the key */
     z-index: 1; /* Lower z-index to place it underneath the red key */
 }
@@ -179,7 +179,7 @@ body {
     min-width: 60px; /* Set minimum width to ensure visibility */
     min-height: 100px; /* Set minimum height to ensure visibility */
     border-radius: 20px; /* Rounded corners for the key */
-    background: linear-gradient(#057EC9 96%, #0872C1 4%);
+    background: linear-gradient(#0080EA 96%, #2C5C91 4%);
     position: relative; /* Necessary for stacking and positioning */
     z-index: 2; /* Higher z-index for the red key itself */
 }
@@ -191,7 +191,7 @@ body {
     left: 0; /* Align to the left */
     width: 100%; /* Full width of the key */
     height: 20px; /* Height of the darker red rectangle */
-    background: linear-gradient(to bottom, #057EC9 0%, #0872C1 100%);
+    background: linear-gradient(to bottom, #0080EA 0%, #2C5C91 100%);
     border-radius: 0 20px 20px; /* Round the bottom corners to match the key */
     z-index: 1; /* Lower z-index to place it underneath the red key */
 }
@@ -202,7 +202,7 @@ body {
     min-width: 60px; /* Set minimum width to ensure visibility */
     min-height: 100px; /* Set minimum height to ensure visibility */
     border-radius: 20px; /* Rounded corners for the key */
-    background: linear-gradient(#4e0384 96%, #380466 4%);
+    background: linear-gradient(#983DE8 96%, #623F7E 4%);
     position: relative; /* Necessary for stacking and positioning */
     z-index: 2; /* Higher z-index for the red key itself */
 }
@@ -214,7 +214,7 @@ body {
     left: 0; /* Align to the left */
     width: 100%; /* Full width of the key */
     height: 20px; /* Height of the darker red rectangle */
-    background: linear-gradient(to bottom, #4e0384 0%, #380466 100%);
+    background: linear-gradient(to bottom, #983DE8 0%, #623F7E 100%);
     border-radius: 0 20px 20px; /* Round the bottom corners to match the key */
     z-index: 1; /* Lower z-index to place it underneath the red key */
 }

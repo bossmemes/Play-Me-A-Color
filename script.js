@@ -6,12 +6,12 @@ const circle = document.getElementById('circle');
 
 // Define key-to-color mapping
 const keyColors = {
-    's': '#aa0000', // red
+    's': '#c42222', // red
     'd': '#fe6300', // orange
     'f': '#ffec00', // yellow
     'j': '#25fe00', // green
-    'k': '#057EC9', // blue
-    'l': '#4e0384'  // purple
+    'k': '#0080EA', // blue
+    'l': '#983DE8'  // purple
 };
 
 // Key-to-shadow mapping (for shadow effect)
